@@ -1,0 +1,601 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/Vazir.ttf');
+    src: url('../font/Vazir.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('../font/BYekan.ttf');
+
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Vazir';
+    direction: rtl;
+
+}
+
+.navbar-nav {
+    width: 500px;
+    margin: 0 100px;
+
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a:hover {
+    border-bottom: 2px solid orange;
+    
+}
+
+.nav-item {
+    margin-right: 20px;
+
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 50px;
+
+}
+
+/*swiper*/
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.row-first {
+    line-height: 1.9rem;
+}
+
+.job {
+    background-color: lightgray;
+
+}
+
+.title-two {
+    color: chocolate;
+}
+
+.img-first {
+    position: relative;
+}
+
+.img-first img {
+    width: 540px;
+    height: 282px;
+}
+
+.img-first:hover .img-haver {
+    opacity: 1;
+}
+
+.img-haver {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 15px;
+    width: 540px;
+    height: 282px;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(55, 56, 55, 0.8);
+
+}
+
+.add {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.add img {
+    width: 30px;
+    height: 30px;
+
+}
+
+/*video*/
+.fullscreen-bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.fullscreen-bg video {
+    width: 100%;
+    height: 408px;
+}
+
+.text-video {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 50%;
+    color: white;
+
+}
+
+/*lorm tree*/
+.img-tree {
+    position: relative;
+    text-align: center;
+}
+
+.img-tree img {
+    width: 360px;
+    height: 202px;
+
+}
+
+.lorm-tree {
+    position: absolute;
+    width: 360px;
+    height: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 15px;
+    color: white;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.img-hovertwo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 15px;
+    width: 360px;
+    height: 202px;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(55, 56, 55, 0.8);
+}
+.img-hovertwo .add img{
+    width: 30px;
+    height: 30px;
+}
+.img-tree:hover .img-hovertwo {
+    opacity: 1;
+
+}
+
+.img-tree:hover .lorm-tree {
+    opacity: 0;
+
+}
+
+.bg-title {
+    height: 200px;
+    width: 100%;
+    background: lightgray;
+
+}
+
+.lorm-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
+}
+
+.lorm-button button {
+    padding: 5px 30px;
+    text-align: center;
+}
+
+.two-left {
+    height: 562px;
+    width:940px;
+    position: relative;
+    left: 15%;
+
+}
+
+.card-left {
+    position: absolute;
+    z-index: 9999;
+    top: 250px;
+
+}
+
+.card-color {
+    color: chocolate;
+}
+
+.two-right {
+    height: 562px;
+    width: 1000px;
+    position: relative;
+}
+
+.card-right {
+    position: absolute;
+    z-index: 9999;
+    top: 250px;
+
+}
+
+#card-bg {
+    background: rgb(247, 244, 244);
+    padding-bottom: 3rem;
+
+}
+
+
+
+.Btn-tree {
+    margin: 0 1rem;
+    padding: 5px 4rem;
+    border-width: 2px;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background: #000000bb;
+}
+
+.bar-footer {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-footer {
+    text-align: center !important;
+    border-left: 1px solid #fff;
+    width: 100%;
+    outline: none;
+
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-weight: bold;
+
+
+
+}
+
+.website {
+
+    color: #fff;
+}
+
+.webdev {
+    text-align: end;
+    color: #fff;
+}
+
+.webdev span {
+    color: chocolate;
+}
+
+
+/*labtab*/
+@media screen and (max-width: 992px) and (min-width:769px) {
+    .swiper {
+        width: 100%;
+        height: 460px;
+    }
+
+    .colresever {
+        flex-direction: column-reverse;
+    }
+
+    .img-first img {
+        width:100%;
+        height: 100%; 
+    }
+    .img-haver{
+        width: 95.7% ;
+        height: 100% ;
+    }
+   
+    .img-tree img {
+        width: 100%;
+        height: 100%;
+        
+    }
+   
+   
+    .img-hovertwo {
+        width: 92%;
+        height:100%;
+    }
+
+    .add img {
+        width: 30px;
+        height: 30px;
+    }
+    .lorm-tree {
+        width: 100%;
+        height: 100%;
+    }
+    .two-left,
+    .two-right {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        
+    }
+    .two-right{
+        top: 7rem;
+
+    }
+    #card-bg{
+        padding-bottom: 15rem;
+    }
+    .card-left,.card-right{
+        width: 94% !important;
+        border: 0px;
+        background: none;
+    }
+   
+
+    .card-left {
+        top: 20.7rem;
+
+    }
+
+    .card-right {
+        top: 3rem;
+    }
+    .two-imgcard {
+        margin-bottom: 15rem;
+    }
+    .two-imgcard .card{
+        top: 6.9rem;
+    }
+    .four-card{
+        top: 7rem;
+    }
+    
+    .webdev {
+        text-align: center;
+    }
+
+    .website {
+        text-align: center;
+        color: #fff;
+    }
+
+    .content {
+        margin-top: 3rem;
+    }
+
+    .footer-link {
+        margin: 0;
+    }
+    .content button{
+        margin-top: 1rem;
+    }
+}
+/*tablet*/
+
+@media screen and (max-width: 768px) and (min-width:577px) {
+    .swiper {
+        width: 100%;
+        height: 460px;
+    }
+
+    .colresever {
+        flex-direction: column-reverse;
+    }
+
+    .img-first img {
+        width:100%;
+        height: 100%; 
+    }
+    .img-haver{
+        width: 94.5% ;
+        height: 100% ;
+    }
+    .img-tree img {
+        width: 100%;
+        height: 100%;
+    }
+   
+    .add img {
+        width: 30px;
+        height: 30px;
+    }
+    .img-hovertwo {
+        width: 94%;
+        height:100%;
+    }
+
+    .add img {
+        width: 30px;
+        height: 30px;
+    }
+    .lorm-tree {
+        width: 100%;
+        height: 100%;
+    }
+    .two-left,
+    .two-right {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        
+    }
+    .two-right{
+        top: 7rem;
+
+    }
+    #card-bg{
+        padding-bottom: 15rem;
+    }
+    .card-left,.card-right{
+        width: 94% !important;
+        border: 0px;
+        background: none;
+    }
+   
+
+    .card-left {
+        top: 15.7rem;
+
+    }
+
+    .card-right {
+       
+        top: 0rem;
+    }
+    .two-imgcard {
+        margin-bottom: 15rem;
+    }
+    .two-imgcard .card{
+        top: 6.9rem;
+    }
+    .four-card{
+        top: 7rem;
+    }
+    
+    .webdev {
+        text-align: center;
+    }
+
+    .website {
+        text-align: center;
+        color: #fff;
+    }
+
+    .content {
+        margin-top: 3rem;
+    }
+
+    .footer-link {
+        margin: 0;
+    }
+    .content button{
+        margin-top: 1rem;
+    }
+}
+
+/*phon*/
+@media screen and (max-width:576px) {
+
+    .swiper {
+        width: 100%;
+        height: 764px;
+    }
+    
+
+    .img-first img {
+        width: 100% ;
+        height: 304px ;
+        
+    }
+
+    .colresever {
+        flex-direction: column-reverse;
+    }
+
+    .img-tree img {
+        width: 100%;
+        height: 304px;
+    }
+    .img-haver{
+        width: 94% ;
+        height: 304px ;
+    }
+
+    .img-hovertwo {
+        width: 94%;
+        height: 304px;
+    }
+
+    .add img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lorm-tree {
+        width: 100%;
+        height: 304px;
+    }
+
+    .two-left,
+    .two-right {
+        width: 100%;
+        height: 304px;
+        margin-top: 5rem;
+        left: 0;
+    }
+    #card-bg{
+        padding-bottom: 7rem;
+    }
+    .card-left,.card-right{
+        width: 94% !important;
+        border: 0px;
+        background: none;
+        
+    }
+
+    .card-left {
+        top: 23rem;
+    }
+
+    .card-right {
+        top: -1rem;
+    }
+
+    .Btn-tree {
+        margin: 1rem 0;
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .webdev {
+        text-align: center;
+    }
+
+    .website {
+        text-align: center;
+        color: #fff;
+    }
+
+    .content {
+        margin-top: 3rem;
+    }
+
+    .footer-link {
+        margin: 0;
+    }
+
+}
